@@ -1,0 +1,9 @@
+<resources>
+    <color name="purple_500">#6200EE</color>
+    <color name="bg_dark_green">#042928</color>
+    <color name="gold">#F1B440</color>
+    <color name="button_border">#2C5D5C</color>
+    <color name="button_bg_dark">#083B3A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/bg_dark_green">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/btn_exit"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:background="@drawable/bg_back_circle"
+            android:src="@drawable/ic_back_arrow"
+            android:padding="11dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Exit" />
+
+        <LinearLayout
+            android:id="@+id/movesContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_exit"
+            app:layout_constraintEnd_toStartOf="@id/btn_refresh"
+            android:layout_marginTop="52dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/moves_title"
+                android:textColor="#2C5D5C"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.1" />
+
+            <TextView
+                android:id="@+id/tv_steps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_refresh"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:background="@drawable/bg_back_circle"
+            android:src="@drawable/ic_restart"
+            android:padding="11dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Restart" />
+
+        <ImageView
+            android:id="@+id/btn_sound"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:background="@drawable/bg_back_circle"
+            android:src="@drawable/ic_volume_up"
+            android:padding="11dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            app:layout_constraintTop_toBottomOf="@id/btn_refresh"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Sound" />
+
+        <LinearLayout
+            android:id="@+id/timerContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/movesContainer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time_title"
+                android:textColor="#2C5D5C"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.1" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_grid"
+            android:padding="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/timerContainer"
+            android:layout_marginVertical="24dp">
+
+            <TextView android:id="@+id/button1" style="@style/MyGameButtonResponsive" tools:text="1" />
+            <TextView android:id="@+id/button2" style="@style/MyGameButtonResponsive" android:layout_toRightOf="@id/button1" tools:text="2" />
+            <TextView android:id="@+id/button3" style="@style/MyGameButtonResponsive" android:layout_toRightOf="@id/button2" tools:text="3" android:background="@drawable/bg_tile_gold" android:textColor="@color/bg_dark_green" />
+            <TextView android:id="@+id/button4" style="@style/MyGameButtonResponsive" android:layout_toRightOf="@id/button3" tools:text="4" />
+
+            <TextView android:id="@+id/button5" style="@style/MyGameButtonResponsive" android:layout_below="@id/button1" tools:text="5" />
+            <TextView android:id="@+id/button6" style="@style/MyGameButtonResponsive" android:layout_below="@id/button2" android:layout_toRightOf="@id/button5" tools:text="6" />
+            <TextView android:id="@+id/button7" style="@style/MyGameButtonResponsive" android:layout_below="@id/button3" android:layout_toRightOf="@id/button6" tools:text="7" />
+            <TextView android:id="@+id/button8" style="@style/MyGameButtonResponsive" android:layout_below="@id/button4" android:layout_toRightOf="@id/button7" tools:text="8" />
+
+            <TextView android:id="@+id/button9" style="@style/MyGameButtonResponsive" android:layout_below="@id/button5" tools:text="9" />
+            <TextView android:id="@+id/button10" style="@style/MyGameButtonResponsive" android:layout_below="@id/button6" android:layout_toRightOf="@id/button9" tools:text="10" />
+            <TextView android:id="@+id/button11" style="@style/MyGameButtonResponsive" android:layout_below="@id/button7" android:layout_toRightOf="@id/button10" tools:text="11" />
+            <TextView android:id="@+id/button12" style="@style/MyGameButtonResponsive" android:layout_below="@id/button8" android:layout_toRightOf="@id/button11" tools:text="12" />
+
+            <TextView android:id="@+id/button13" style="@style/MyGameButtonResponsive" android:layout_below="@id/button9" tools:text="13" />
+            <TextView android:id="@+id/button14" style="@style/MyGameButtonResponsive" android:layout_below="@id/button10" android:layout_toRightOf="@id/button13" tools:text="14" />
+            <TextView android:id="@+id/button15" style="@style/MyGameButtonResponsive" android:layout_below="@id/button11" android:layout_toRightOf="@id/button14" tools:text="15" />
+            <TextView android:id="@+id/button16" style="@style/MyGameButtonResponsive" android:layout_below="@id/button12" android:layout_toRightOf="@id/button15" tools:text="" android:background="@drawable/bg_tile_empty" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_back_bottom"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_back_button"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/btn_back_game"
+            android:textColor="@color/gold"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/relativeLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

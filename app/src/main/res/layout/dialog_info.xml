@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog"
+    android:padding="24dp"
+    android:layout_marginHorizontal="20dp"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:rotation="45"
+        android:background="@drawable/bg_tile_empty"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rules_title"
+        android:textColor="#052423"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.05"
+        android:layout_marginTop="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D8CDB5"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="18dp"
+        android:layout_marginHorizontal="8dp">
+
+        <TextView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/bg_info_step"
+            android:text="1"
+            android:textColor="@color/gold"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginEnd="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rules_desc_1"
+            android:textColor="#1A2E2E"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="18dp"
+        android:layout_marginHorizontal="8dp">
+
+        <TextView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/bg_info_step"
+            android:text="2"
+            android:textColor="@color/gold"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginEnd="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rules_desc_2"
+            android:textColor="#1A2E2E"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="32dp"
+        android:layout_marginHorizontal="8dp">
+
+        <TextView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/bg_info_step"
+            android:text="3"
+            android:textColor="@color/gold"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginEnd="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rules_desc_3"
+            android:textColor="#1A2E2E"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_ok"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="@string/btn_got_it"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:background="@drawable/bg_btn_gold"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_marginBottom="24dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E2DAC8"
+        android:layout_marginBottom="12dp"
+        android:layout_marginHorizontal="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by Isroilov Asadbek"
+        android:textColor="#A08C8C8C"
+        android:textSize="12sp"
+        android:layout_marginBottom="4dp" />
+
+</LinearLayout>

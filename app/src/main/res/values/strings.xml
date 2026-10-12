@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">PuzGridox</string>
+    <string name="puzzle_title">PuzGridox</string>
+    <string name="hint_enter_name">Enter your name</string>
+    <string name="btn_start">START</string>
+    <string name="btn_continue">CONTINUE</string>
+    <string name="btn_records">RECORDS</string>
+    <string name="btn_quit">QUIT</string>
+    <string name="rules_title">HOW TO PLAY</string>
+    <string name="rules_desc_1">Arrange tiles from 1 to 15.</string>
+    <string name="rules_desc_2">Slide a tile into the empty space.</string>
+    <string name="rules_desc_3">Fewer moves, better record.</string>
+    <string name="btn_got_it">GOT IT</string>
+    <string name="moves_title">MOVES</string>
+    <string name="time_title">TIME</string>
+    <string name="btn_back_game">← BACK</string>
+    <string name="congrats_title">CONGRATULATIONS</string>
+    <string name="puzzle_solved">Puzzle solved successfully</string>
+    <string name="time_label">TIME</string>
+    <string name="moves_label">MOVES</string>
+    <string name="new_record_label">New Record!</string>
+    <string name="btn_back_to_menu">BACK TO MENU</string>
+    <string name="msg_confirm_exit">DO YOU WANT TO EXIT THE GAME?</string>
+    <string name="msg_confirm_restart">DO YOU WANT TO RESTART THE GAME?</string>
+    <string name="btn_no">NO</string>
+    <string name="btn_yes">YES</string>
+</resources>
