@@ -6,6 +6,19 @@ A classic 15-puzzle (sliding tile) game for Android.
 
 > 📚 **Note:** This project was created while I was learning Android development. The code is not perfect and may contain mistakes or messy parts. I'm improving it as I learn.
 
+## Screenshots
+
+<p>
+  <img src="1.jpg" width="200">
+  <img src="2.jpg" width="200">
+  <img src="3.jpg" width="200">
+</p>
+<p>
+  <img src="4.jpg" width="200">
+  <img src="5.jpg" width="200">
+  <img src="6.jpg" width="200">
+</p>
+
 ## How to play
 - Arrange tiles from 1 to 15 in order.
 - Slide a tile into the empty space.
